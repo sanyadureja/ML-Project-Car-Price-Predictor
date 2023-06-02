@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import pickle
 
-model = pickle.load(open("LinearRegression.pkl", 'rb'))
+model = pickle.load(open("/Users/sanyadureja/Desktop/Car_price_predictor/LinearRegression.pkl", 'rb'))
 car = pd.read_csv('Cleaned Car.csv')
 
 def predict_price(company, car_model, year, fuel_type, kms_driven):
